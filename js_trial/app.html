@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workout app</title>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <div class="banner">
+          <h1>Workout app</h1>
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+        </div>
+        <div class="question">
+            <p>Preferred workout location</p>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_1" name="location"/>
+                <label for="radio_1" class="radio"><span>Indoors</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_2" name="location"/>
+                <label for="radio_2" class="radio"><span>Outdoors</span></label>
+              </div>
+            </div>
+        </div>
+        <div class="question">
+            <p>Body part to workout</p>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_3" name="bodypart"/>
+                <label for="radio_3" class="radio"><span>Upper</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_4" name="bodypart"/>
+                <label for="radio_4" class="radio"><span>Core</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_5" name="bodypart"/>
+                <label for="radio_5" class="radio"><span>Lower</span></label>
+              </div>
+            </div>
+        </div>
+        <div class="item">
+          <p>Budget</p>
+          <input type="number" name="budget"/>
+        </div>
+        <div class="question">
+            <p>Time</p>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_6" name="time"/>
+                <label for="radio_6" class="radio"><span>Morning</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_7" name="time"/>
+                <label for="radio_7" class="radio"><span>Afternoon</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="radio_8" name="time"/>
+                <label for="radio_8" class="radio"><span>Evening</span></label>
+              </div>
+            </div>
+        </div>
+        <div class="btn-block">
+        </div>
+      </form>
+      <br>
+      <button type="submit" onclick="find()">Send Application</button>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
