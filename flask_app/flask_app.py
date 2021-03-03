@@ -25,6 +25,7 @@ def home():
         workout_buddies = workout(
             name=form.name.data,
             bodypart=form.bodypart.data,
+            loc = form.location.data,
             budget=form.budget.data,
             times=form.time.data
         )
@@ -37,7 +38,7 @@ def home():
         
         return flask.redirect(flask.url_for('output'))
 
-    return flask.render_template('flask_form.html', title='Home', form=form)
+    return flask.render_template('flask_form.html', title='Home', form=form, times=time_map.keys(), parts = part_map.keys())
 
 @app.route('/output')
 def output():
