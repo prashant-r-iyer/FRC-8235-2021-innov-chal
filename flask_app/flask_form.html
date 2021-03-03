@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class='content-section'>
+        <form method="POST", action="">
+            {{ form.hidden_tag() }}
+            <fieldset class='form-group'>
+                <legend class='border-bottom mb-4'><h1>Workout App</h1></legend>
+                <div class='form-group'>
+                    <h5>{{ form.name.label(class='form-control-label') }}</h5>
+                    {{ form.name(class='form-control form-control-lg') }}
+                </div>
+                <legend class='border-bottom mb-4'></legend>
+                <div class='form-group'>
+                    <h5>
+                        {{ form.bodypart.label(class='form-control-label') }}
+                    </h5>
+                    <p>
+                        U : Upper body <br>
+                        C : Core <br>
+                        L : Lower body <br>
+                    </p>
+                    {{ form.bodypart(class='form-control form-control-lg') }}
+                </div>
+                <legend class='border-bottom mb-4'></legend>
+                <div class='form-group'>
+                    <h5>{{ form.location.label(class='form-control-label') }}</h5>
+                    <p>
+                        Outdoors or Indoors <br>
+                    </p>
+                    {{ form.location(class='form-control form-control-lg') }}
+                </div>
+                <legend class='border-bottom mb-4'></legend>
+                <div class='form-group'>
+                    <h5>{{ form.time.label(class='form-control-label') }}</h5>
+                    <p>
+                        M : Morning <br>
+                        A : Afternoon <br> 
+                        E : Evening <br>
+                    </p>
+                    {{ form.time(class='form-control form-control-lg') }}
+                </div>
+                <legend class='border-bottom mb-4'></legend>
+                <div class='form-group'>
+                    <h5>{{ form.budget.label(class='form-control-label') }}</h5>
+                    {{ form.budget(class='form-control form-control-lg') }}
+                </div>
+                <legend class='border-bottom mb-4'></legend>
+            </fieldset>
+            <div class='form-group'>
+                {{ form.submit(class='btn btn-outline-info')}}
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class='content-section'>
+        {% for msg in msgs %}
+        <p>{{ msg }}</p>
+        {% endfor %}
+        <a href='home'>Back</a>
+    </div>
+
+{% endblock content %}
