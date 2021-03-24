@@ -2,7 +2,8 @@ from app import workout
 from form import Details
 import flask 
 
-app = flask.Flask(__name__, template_folder='/users/gursi/desktop/other/FRC/flask_app')
+# app = flask.Flask(__name__, template_folder='/users/gursi/desktop/other/FRC/flask_app')
+app = flask.Flask(__name__, template_folder='C:/Users/prash/VSCodeProjects/FRC/FRC-8235-2021-innov-chal/flask_app')
 app.config['SECRET_KEY'] = '7584938n457987f3n984'
 
 msgs = []
